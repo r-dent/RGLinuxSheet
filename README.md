@@ -26,4 +26,8 @@ Resume screen
 
 Leave screen in background
 
-    Ctrl+a Ctrl+b
+    Ctrl+a Ctrl+d
+    
+Clear DNS Cache [MAC OS]
+
+    dscacheutil -flushcache 
