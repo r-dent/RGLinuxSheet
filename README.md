@@ -3,19 +3,27 @@ RGLinuxSheet
 
 Here i will list my most recent used Ubuntu commands. This is whether what i use most or have to google very often.
 
-Alle IP´s im Netzwerk finden:
+Find all IP´s in current local network
 
     ping *.*.*.255
     arp -a
 
-Einen Ordner auf der Fesplatte suchen (Link)
+Find a folder
 
     find / -name 'httpdocs' -type d
 
-Den Rechner herunter fahren
+Shutdown system
 
     sudo shutdown -h now
 
 GIT Discard any changes
 
     git checkout -f
+
+Resume screen
+
+    screen -r
+
+Leave screen in background
+
+    Ctrl+a Ctrl+b
