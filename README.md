@@ -30,4 +30,8 @@ Leave screen in background
     
 Clear DNS Cache [MAC OS]
 
-    dscacheutil -flushcache 
+    dscacheutil -flushcache
+    
+Git Submodule add
+
+    git submodule add https://path.to/submodule.git folder/to/clone/to
