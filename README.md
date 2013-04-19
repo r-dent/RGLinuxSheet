@@ -35,3 +35,9 @@ Clear DNS Cache [MAC OS]
 Git Submodule add
 
     git submodule add https://path.to/submodule.git folder/to/clone/to
+    
+Fetch submodules if the folders are missing
+
+    git submodule init 
+    git submodule update
+
