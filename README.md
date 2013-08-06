@@ -40,4 +40,11 @@ Fetch submodules if the folders are missing
 
     git submodule init 
     git submodule update
+    
+Install LATEST version of node
+
+    sudo apt-get install python-software-properties
+    sudo add-apt-repository ppa:chris-lea/node.js
+    sudo apt-get update
+    sudo apt-get install nodejs
 
