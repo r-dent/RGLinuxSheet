@@ -47,4 +47,9 @@ Install LATEST version of node
     sudo add-apt-repository ppa:chris-lea/node.js
     sudo apt-get update
     sudo apt-get install nodejs
+    
+Compress a folder with tar and extract it
+
+    tar czf compressed.tar.gz a/folder/
+    tar xvf compressed.tar.gz
 
