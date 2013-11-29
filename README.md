@@ -53,3 +53,6 @@ Compress a folder with tar and extract it
     tar czf compressed.tar.gz a/folder/
     tar xvf compressed.tar.gz
 
+Copy public ssh key to server
+
+    cat ~/.ssh/id_rsa.pub | ssh user@server.tld "cat >> ~/.ssh/authorized_keys"
