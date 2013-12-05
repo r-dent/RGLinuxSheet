@@ -15,6 +15,8 @@ Find a folder
 Shutdown system
 
     sudo shutdown -h now
+    #or
+    sudo halt
 
 GIT Discard any changes
 
@@ -37,9 +39,8 @@ Git Submodule add
     git submodule add https://path.to/submodule.git folder/to/clone/to
     
 Fetch submodules if the folders are missing
-
-    git submodule init 
-    git submodule update
+ 
+    git submodule update --init
     
 Install LATEST version of node
 
@@ -55,4 +56,6 @@ Compress a folder with tar and extract it
 
 Copy public ssh key to server
 
+    ssh-copy-id user@server.tld
+    # or
     cat ~/.ssh/id_rsa.pub | ssh user@server.tld "cat >> ~/.ssh/authorized_keys"
