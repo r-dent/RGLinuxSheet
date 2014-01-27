@@ -59,3 +59,11 @@ Copy public ssh key to server
     ssh-copy-id user@server.tld
     # or
     cat ~/.ssh/id_rsa.pub | ssh user@server.tld "cat >> ~/.ssh/authorized_keys"
+    
+Count lines in a file
+    
+    wc -l file.txt
+    
+Find lines containing string
+
+    less file.txt | grep "string"
