@@ -18,9 +18,18 @@ Shutdown system
     #or
     sudo halt
 
-GIT Discard any changes
+Git - Discard any changes
 
     git checkout -f
+    
+Git - Submodule add
+
+    git submodule add https://path.to/submodule.git folder/to/clone/to
+    
+Git - Update Submodules
+
+    git submodule update --recursive
+    git pull --recurse-submodules
 
 Resume screen
 
@@ -33,10 +42,6 @@ Leave screen in background
 Clear DNS Cache [MAC OS]
 
     dscacheutil -flushcache
-    
-Git Submodule add
-
-    git submodule add https://path.to/submodule.git folder/to/clone/to
     
 Fetch submodules if the folders are missing
  
