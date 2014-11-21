@@ -11,6 +11,10 @@ Find all IP´s in current local network
 Find a folder
 
     find / -name 'httpdocs' -type d
+    
+Get the size of a folder
+
+    du -ch the/path | grep total
 
 Shutdown system
 
