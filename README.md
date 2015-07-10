@@ -43,10 +43,6 @@ Leave screen in background
 
     Ctrl+a Ctrl+d
     
-Clear DNS Cache [MAC OS]
-
-    dscacheutil -flushcache
-    
 Fetch submodules if the folders are missing
  
     git submodule update --init
