@@ -72,3 +72,7 @@ Count lines in a file
 Find lines containing string
 
     less file.txt | grep "string"
+    
+Find Path of running process (macOS)
+
+    ps aux | grep Xcode 
