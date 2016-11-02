@@ -73,6 +73,10 @@ Find lines containing string
 
     less file.txt | grep "string"
     
+Find occurrences of string in files
+
+    grep -r "string" .
+    
 Find Path of running process (macOS)
 
     ps aux | grep Xcode 
