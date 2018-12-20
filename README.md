@@ -14,7 +14,8 @@ Find a folder
     
 Get the size of a folder
 
-    du -ch the/path | grep total
+    du -chs the/path | grep total // Size of folder
+    du -chd 1 the/path // Sizes of subfolders
 
 Shutdown system
 
