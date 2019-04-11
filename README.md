@@ -1,40 +1,17 @@
-RGLinuxSheet
-============
+# RGLinuxSheet
 
-Here i will list my most recent used Ubuntu commands. This is whether what i use most or have to google very often.
+Here i will list my most recent used Linux commands. This is whether what i use most or have to google very often.
 
 Find all IP´s in current local network
 
     ping *.*.*.255
     arp -a
 
-Find a folder
-
-    find / -name 'httpdocs' -type d
-    
-Get the size of a folder
-
-    du -chs the/path | grep total // Size of folder
-    du -chd 1 the/path // Sizes of subfolders
-
 Shutdown system
 
     sudo shutdown -h now
     #or
     sudo halt
-
-Git - Discard any changes
-
-    git checkout -f
-    
-Git - Submodule add
-
-    git submodule add https://path.to/submodule.git folder/to/clone/to
-    
-Git - Update Submodules
-
-    git submodule update --recursive
-    git pull --recurse-submodules
 
 Resume screen
 
@@ -44,27 +21,40 @@ Leave screen in background
 
     Ctrl+a Ctrl+d
     
-Fetch submodules if the folders are missing
- 
-    git submodule update --init
-    
 Install LATEST version of node
 
     sudo apt-get install python-software-properties
     sudo add-apt-repository ppa:chris-lea/node.js
     sudo apt-get update
     sudo apt-get install nodejs
-    
-Compress a folder with tar and extract it
-
-    tar czf compressed.tar.gz a/folder/
-    tar xvf compressed.tar.gz
 
 Copy public ssh key to server
 
     ssh-copy-id user@server.tld
     # or
     cat ~/.ssh/id_rsa.pub | ssh user@server.tld "cat >> ~/.ssh/authorized_keys"
+    
+Find Path of running process (macOS)
+
+    ps aux | grep Xcode 
+    
+## Filesystem
+
+Find a folder
+
+    find / -name 'httpdocs' -type d
+    
+Get the size of a folder
+
+    du -chs the/path | grep total // Size of folder
+    du -chd 1 the/path // Sizes of subfolders
+    
+Compress a folder with tar and extract it
+
+    tar czf compressed.tar.gz a/folder/
+    tar xvf compressed.tar.gz
+    
+## Text in files
     
 Count lines in a file
     
@@ -78,6 +68,32 @@ Find occurrences of string in files
 
     grep -r "string" .
     
-Find Path of running process (macOS)
+## GIT
 
-    ps aux | grep Xcode 
+Git - Discard any changes
+
+    git checkout -f
+    
+Git - Submodule add
+
+    git submodule add https://path.to/submodule.git folder/to/clone/to
+    
+Git - Update Submodules
+
+    git submodule update --recursive
+    git pull --recurse-submodules
+    
+Fetch submodules if the folders are missing
+ 
+    git submodule update --init
+    
+Setup custom diff tool
+I´m using `ksdiff` which is the CLI interface for [Kaleidoscope](https://www.kaleidoscopeapp.com/).
+
+    git config diff.tool ksdiff
+    git config difftool.ksdiff.cmd 'ksdiff $LOCAL $REMOTE'
+    git config difftool.prompt false
+    
+Diff files between `some_branch` and HEAD.
+
+    git difftool some_branch.. -- Filename.ext
