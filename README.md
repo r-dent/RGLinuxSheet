@@ -54,6 +54,10 @@ Compress a folder with tar and extract it
     tar czf compressed.tar.gz a/folder/
     tar xvf compressed.tar.gz
     
+Serve a Folder via HTTP
+
+    python -m SimpleHTTPServer 8080
+    
 ## Text in files
     
 Count lines in a file
