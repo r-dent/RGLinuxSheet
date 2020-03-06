@@ -72,6 +72,10 @@ Find occurrences of string in files
 
     grep -r "string" .
     
+Truncate all lines to a length of 80 (using [cut](https://www.geeksforgeeks.org/cut-command-linux-examples/))
+
+    cut -c -80 some-file.txt
+    
 ## GIT
 
 Git - Discard any changes
