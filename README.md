@@ -105,3 +105,7 @@ I´m using `ksdiff` which is the CLI interface for [Kaleidoscope](https://www.ka
 Diff files between `some_branch` and HEAD.
 
     git difftool some_branch.. -- Filename.ext
+    
+Set global `.gitignore` file
+
+    git config --global core.excludesfile '~/.gitignore'
