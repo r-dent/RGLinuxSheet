@@ -64,9 +64,9 @@ Count lines in a file
     
     wc -l file.txt
     
-Find lines containing string
+Find lines containing string (-o for "only matching part of the line)
 
-    less file.txt | grep "string"
+    less file.txt | grep "string" -o
     
 Find occurrences of string in files
 
