@@ -57,6 +57,8 @@ Compress a folder with tar and extract it
 Serve a Folder via HTTP
 
     python -m SimpleHTTPServer 8080
+    # or
+    python3 -m http.server 8080
     
 ## Text in files
     
